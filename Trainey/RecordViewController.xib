@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecordViewController">
+            <connections>
+                <outlet property="contentView" destination="6VI-b4-TUG" id="Iz2-Tx-11H"/>
+                <outlet property="navigationBar" destination="xOA-sG-PvV" id="3Dw-ZJ-cof"/>
+                <outlet property="segmentedControl" destination="ihL-CK-CXa" id="BCm-JD-pPN"/>
+                <outlet property="textView" destination="bDS-9Y-Ccr" id="Q9N-HS-DN8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="SfR-2J-Cs2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOA-sG-PvV">
+                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <color key="barTintColor" red="0.0" green="0.50588235290000005" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <items>
+                        <navigationItem title="2015/04/18 (土)" id="zJP-OT-HyH">
+                            <barButtonItem key="leftBarButtonItem" image="detail.png" id="KIk-RH-nvg">
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="settingButtonPushed:" destination="-1" id="vTi-Rg-mZu"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ihL-CK-CXa">
+                    <rect key="frame" x="107" y="68" width="160" height="29"/>
+                    <segments>
+                        <segment title="日付別"/>
+                        <segment title="メニュー別"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentChange:" destination="-1" eventType="valueChanged" id="fln-Fy-cHG"/>
+                    </connections>
+                </segmentedControl>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6VI-b4-TUG">
+                    <rect key="frame" x="0.0" y="102" width="375" height="516"/>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.94901960780000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.92549019610000005" green="0.94901960780000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="&quot;+&quot;を押すと、ここにトレーニングメニューが追加されます。" selectable="NO" id="bDS-9Y-Ccr">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="516"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="0.92549019610000005" green="0.94901960780000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+            <point key="canvasLocation" x="805.5" y="203"/>
+        </textView>
+    </objects>
+    <resources>
+        <image name="detail.png" width="44" height="44"/>
+    </resources>
+</document>
