@@ -1,4 +1,4 @@
-# ![Trainey](misc/icon.png) Trainey
+# ![Trainey](misc/Icon.png) Trainey
 ・筋トレのiOS用の記録アプリです。
 
 ・[AppleStoreで無料でダウンロードできます。](https://geo.itunes.apple.com/jp/app/trainey-intabaru-zhongni-jian/id1022841669?mt=8)
