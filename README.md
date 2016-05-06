@@ -10,7 +10,7 @@
 
 ・You can record muscle training while you measure the Interval Time.
 
-## 概要 (ViewControllers)
+## Overview (ViewControllers)
 
 # ![Trainey](misc/ViewControllers_ScreenShot.001.png)
 
