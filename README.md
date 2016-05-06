@@ -1,4 +1,4 @@
-# ![Trainey](misc/icon.png) Trainey
+# ![Trainey](misc/Icon.png) Trainey
 ・This is a iOSapp to record muscle training. 
 
 ・[you can download it at AppleStore in Japan.](https://geo.itunes.apple.com/jp/app/trainey-intabaru-zhongni-jian/id1022841669?mt=8)
@@ -10,7 +10,7 @@
 
 ・You can record muscle training while you measure the Interval Time.
 
-## 概要 (ViewControllers)
+## Overview (ViewControllers)
 
 # ![Trainey](misc/ViewControllers_ScreenShot.001.png)
 
