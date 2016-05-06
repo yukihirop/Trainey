@@ -14,7 +14,7 @@
 
 # ![Trainey](misc/ViewControllers_ScreenShot.001.png)
 
-右から順に
+左から順に
 
 * HomeViewController
 
