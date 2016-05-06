@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Content" representedClassName="Content" syncable="YES">
+        <attribute name="isTry" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="repeatCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="score" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Score" inverseName="contents" inverseEntity="Score" syncable="YES"/>
+    </entity>
+    <entity name="Menu" representedClassName="Menu" syncable="YES">
+        <attribute name="menuCategory" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="menuName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="record" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Record" inverseName="menus" inverseEntity="Record" syncable="YES"/>
+    </entity>
+    <entity name="Record" representedClassName="Record" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="menus" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Menu" inverseName="record" inverseEntity="Menu" syncable="YES"/>
+        <relationship name="scores" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Score" inverseName="record" inverseEntity="Score" syncable="YES"/>
+    </entity>
+    <entity name="Score" representedClassName="Score" syncable="YES">
+        <attribute name="menuNameAtScore" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contents" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Content" inverseName="score" inverseEntity="Content" syncable="YES"/>
+        <relationship name="record" optional="YES" maxCount="1" deletionRule="Nullify" ordered="YES" destinationEntity="Record" inverseName="scores" inverseEntity="Record" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Content" positionX="349" positionY="113" width="128" height="103"/>
+        <element name="Menu" positionX="135" positionY="-36" width="128" height="88"/>
+        <element name="Record" positionX="-117" positionY="36" width="126" height="88"/>
+        <element name="Score" positionX="135" positionY="86" width="128" height="88"/>
+    </elements>
+</model>
