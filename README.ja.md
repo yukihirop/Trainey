@@ -10,6 +10,10 @@
 
 ・インターバルの時間を測定しながら筋トレの記録ができる。
 
+## デザイン段階([Sketch3](http://www.sketchapp.com)にてデザイン)
+
+# ![Trainey](misc/design.001.png)
+
 ## 概要 (ViewControllers)
 
 # ![Trainey](misc/ViewControllers_ScreenShot.001.png)

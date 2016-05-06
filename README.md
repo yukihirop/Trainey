@@ -10,6 +10,10 @@
 
 ・You can record muscle training while you measure the Interval Time.
 
+## Design phase(I use [Sketch3](http://www.sketchapp.com))
+
+# ![Trainey](misc/design.001.png)
+
 ## Overview (ViewControllers)
 
 # ![Trainey](misc/ViewControllers_ScreenShot.001.png)
